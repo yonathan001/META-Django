@@ -7,4 +7,14 @@ def home(request):
    return response
 
 
-def 
+def menuitems(request, dishes):
+     items = {
+            'burger': 'burger is a fast food',
+            'pizza': 'pizza is an italian food',
+            'pasta': 'pasta is a chinese food',
+            'noodles': 'noodles is a chinese food',
+            'sandwich': 'sandwich is a fast food',
+     }
+
+     discription = items[dishes]
+     return HttpResponse(f" <h2> {dishes} </h2>"+ discription)
