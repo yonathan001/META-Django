@@ -8,3 +8,7 @@ urlpatterns = [
     path('home/',views.home, name='home'), 
    
 ]
+
+urlpatterns = [
+    path('dishes/<str:dishes>', views.menuitems)
+]
