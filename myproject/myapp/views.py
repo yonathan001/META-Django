@@ -3,6 +3,7 @@ from django.http import HttpResponse
 
 def home(request):
    path = request.path
-   return HttpResponse(path, content_type='text/html', charset='utf-8')
+   response = HttpResponse("this response is coming from the view")
+   return response
 
 
