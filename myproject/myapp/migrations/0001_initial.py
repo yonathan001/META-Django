@@ -10,14 +10,4 @@ class Migration(migrations.Migration):
     dependencies = [
     ]
 
-    operations = [
-        migrations.CreateModel(
-            name='Menu',
-            fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('Name', models.CharField(max_length=100)),
-                ('cuisine', models.CharField(max_length=100)),
-                ('price', models.IntegerField()),
-            ],
-        ),
-    ]
+   
