@@ -20,25 +20,16 @@ class Migration(migrations.Migration):
                 ('price', models.IntegerField()),
             ],
         ),
+
+        migrations.CreateModel(
+            name='Order',
+            fields=[
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('Name', models.CharField(max_length=150)),
+                ('cuisine', models.CharField(max_length=150)),
+                ('price', models.IntegerField()),
+            ],
+        )
     ]
 
-operations = [
-    migrations.CreateModel(
-        name='Menu',
-        fields=[
-            ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-            ('Name', models.CharField(max_length=150)),
-            ('cuisine', models.CharField(max_length=150)),
-            ('price', models.IntegerField()),
-        ],
-    ),
-    migrations.CreateModel(
-        name='Order',
-        fields=[
-            ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-            ('Name', models.CharField(max_length=150)),
-            ('cuisine', models.CharField(max_length=150)),
-            ('price', models.IntegerField()),
-        ],
-    ),
-]
+
