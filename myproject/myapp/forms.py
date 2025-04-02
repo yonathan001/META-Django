@@ -1,4 +1,8 @@
 from django import forms
+
 from .models import Logger
 
-class Logform
+class LogForm(forms.ModelForm):
+     class Meta:
+        model = Logger
+        fields = '__all__'
